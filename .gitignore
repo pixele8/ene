@@ -1,0 +1,26 @@
+# 依赖文件
+node_modules/
+*.log
+npm-debug.log*
+
+# 构建输出
+dist/
+build/
+
+# 环境变量
+.env
+.env.local
+
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
