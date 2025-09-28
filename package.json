@@ -1,0 +1,13 @@
+{
+  "name": "gongxiaoliao",
+  "private": true,
+  "version": "0.1.0",
+  "description": "工小聊跨端协同系统 monorepo",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:desktop": "npm --workspace @gongxiaoliao/desktop run start",
+    "start:desktop": "npm --workspace @gongxiaoliao/desktop run start"
+  }
+}
