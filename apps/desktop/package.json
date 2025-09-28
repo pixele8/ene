@@ -1,0 +1,38 @@
+{
+  "name": "@gongxiaoliao/desktop",
+  "version": "0.2.0",
+  "private": true,
+  "description": "工小聊 PC 端桌面应用（演示 / 联机双模式）",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "electron": "electron ./electron/main.js",
+    "electron:build": "electron-builder --win portable",
+    "electron:package": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^28.2.3",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.gongxiaoliao.desktop",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "index.html",
+      "styles.css",
+      "src/**/*",
+      "server.js",
+      "electron/**/*"
+    ],
+    "asar": false,
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ]
+    }
+  }
+}
